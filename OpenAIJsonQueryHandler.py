@@ -42,14 +42,14 @@ def ask_question_about_json(question, json_data):
 # Main function
 if __name__ == "__main__":
     # Path to your JSON file
-    json_file_path = "vihaan-homepage.json"  # Replace with your file path
+    json_file_path = "lawrenceville.json"  # Replace with your file path
 
     # Load JSON data
     json_data = load_json(json_file_path)
     if json_data:
         # User query
         #user_question = "What is the name of the author in this data?"
-        user_question = "Who is Vihaan?"
+        user_question = "tell me about Lawrenceville school?"
 
         # Ask the LLM
         answer = ask_question_about_json(user_question, json_data)
