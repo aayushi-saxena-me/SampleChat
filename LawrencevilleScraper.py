@@ -75,12 +75,13 @@ def answer_question_from_file(question, filename):
 
 # Main execution
 if __name__ == '__main__':
-    website_url = 'https://www.lawrenceville.org/'  # Replace with your website URL
+    #website_url = 'https://www.lawrenceville.org/'  # Replace with your website URL
+    website_url = "https://issuu.com/thelawrencevilleschool/docs/underformers_guide_2023_24_single_pages?fr=sZmFjMDYzNDA0MTQ"
     content = scrape_website(website_url)
 
     if content:
         # Store the scraped content into a JSON file
-        file_name = 'lawrenceville.json'
+        file_name = 'lawrenceville_college_counselling.json'
         store_content_to_file(content, file_name)
 
         # Optionally, read the file back to verify
